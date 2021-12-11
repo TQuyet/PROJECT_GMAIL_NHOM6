@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Gmail.com</title>
 </head>
 
@@ -42,7 +43,7 @@
     <div id="Sidebar">
         <div class="sidebar-right">
             <div class="sidebar-righttop">
-                <button style="border-radius: 16px; font-size: 25px; "><span class="material-icons">
+                <button style="border-radius: 20px; font-size: 25px;margin-left: 10px; "><span class="material-icons">
                         add
                     </span> Soạn thư</button>
                 <ul style="list-style-type: none" class="menusidebar">
@@ -89,11 +90,50 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-container">
-                            <button style="border:none; "><span class="material-icons">
-                                    description
-                                </span>Thư nháp
+                            <button style="border:none;"> <span class="material-icons">
+                                label_important
+                                </span> Quan trọng
                             </button>
+                            <button style="border:none;">
+                                <span class="material-icons">
+                                    sms
+                                    </span>
+                                    Trò chuyện
+                            </button>
+                            <button style="border:none;"><span class="material-icons">
+                                schedule_send
+                                </span>
+                                Đã lên lịch
+                            </button>
+                            <button style="border:none;"><span class="material-icons">
+                                markunread
+                                </span>Tất cả thư
+                            </button>
+                            <button style="border:none;"><span class="material-icons">
+                                new_releases
+                                </span>Thư rác
+                            </button>
+                            <button style="border:none;"><span class="material-icons">
+                                delete
+                                </span> Thùng rác
+                            </button>
+                            <button class="dropdown-btn">
+                                <i class="fa fa-caret-down"></i><span class="material-icons">
+                                    label
+                                </span> Danh mục
+                            </button>
+                            <div class="dropdown-container">
+                                <button style="border:none;"><span class="material-icons">
+                                    people
+                                    </span>mạng xã hội
+                                </button>
+                                <button style="border:none;"><span class="material-icons">
+                                    error
+                                    </span>mạng xã hội
+                                </button>
 
+                            
+            
                         </div>
                     </li>
                 </ul>
@@ -109,6 +149,23 @@
 
 
     </div>
+    <script>
+        /*dropdown */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
