@@ -34,9 +34,27 @@
   margin-left: 100px;
 }
 
+#header .h-search .search-btn{
+  padding-bottom: 39px;
+  background-color: rgb(230, 230, 230);
+  border-color: rgb(102, 102, 102);
+  border-top-left-radius:9px;
+  border-bottom-left-radius:9px;
+  border-right:none ;
+}
+
+#header .h-search .tune-btn{
+  padding-bottom: 39px;
+  background-color: rgb(230, 230, 230);
+  border-color: rgb(102, 102, 102);
+  border-top-right-radius:9px;
+  border-bottom-right-radius:9px;
+  border-left:none ;
+}
+
 #header .h-search span {
-  margin-top: 10px;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 #header .h-search form {
@@ -49,13 +67,14 @@
 }
 
 #header .h-search input {
-  width: 670px;
+  width: 600px;
   height: fit-content;
   padding: 8px;
   margin: 0;
-  border-radius: 5px;
-  border-color: rgb(112, 112, 112);
-  color: rgb(112, 112, 112);
+  background-color: rgb(230, 230, 230);
+  border-color: rgb(102, 102, 102);
+  border-left: none;
+  border-right: none;
 }
 
 #header .h-right {
