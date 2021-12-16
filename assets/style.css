@@ -33,12 +33,13 @@
 #header .h-search {
   
   margin-top: 10px;
-  padding:0px;
+  
 }
 
 #header .h-search span {
   margin-top: 7px;
   margin-right: 3px;
+  
 }
 
 #header .h-search .search-btn {
@@ -135,7 +136,4 @@ a {
 .tune-btn{
   border: none;
 
-}
-.navbar{
-  width: 100%;
 }
