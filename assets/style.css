@@ -26,13 +26,14 @@
   text-decoration-color: black;
   text-decoration: none;
   font-size: 25px;
-  color: rgb(124, 124, 124);
+  
+
 }
 
 #header .h-search {
-  display: flex;
+  
   margin-top: 10px;
-  padding: 0px;
+  padding:0px;
 }
 
 #header .h-search span {
@@ -76,12 +77,13 @@
   border-color: rgb(102, 102, 102);
   border-left: none;
   border-right: none;
+  border: none;
 }
 
 #header .h-right {
   margin-top: 10px;
-  display: flex;
-  justify-content: start;
+ 
+ 
 }
 
 #header .h-right span {
@@ -121,4 +123,19 @@
 }
 a {
   text-decoration: none;
+}
+.container-fluid{
+  width: 100%;
+  background-color: white;
+  
+}
+.search-btn{
+  border: none;
+}
+.tune-btn{
+  border: none;
+
+}
+.navbar{
+  width: 100%;
 }
