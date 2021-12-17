@@ -26,20 +26,15 @@
   text-decoration-color: black;
   text-decoration: none;
   font-size: 25px;
-  
-
 }
 
 #header .h-search {
-  
   margin-top: 10px;
-  
 }
 
 #header .h-search span {
   margin-top: 7px;
   margin-right: 3px;
-  
 }
 
 #header .h-search .search-btn {
@@ -83,8 +78,6 @@
 
 #header .h-right {
   margin-top: 10px;
- 
- 
 }
 
 #header .h-right span {
@@ -93,6 +86,7 @@
   color: rgb(112, 112, 112);
 }
 
+/* sidebar vs righttop */
 #Sidebar {
   height: 100%;
   width: 270px;
@@ -124,16 +118,23 @@
 }
 a {
   text-decoration: none;
+  color: black;
 }
-.container-fluid{
+.container-fluid {
   width: 100%;
   background-color: white;
-  
 }
-.search-btn{
+.search-btn {
   border: none;
 }
-.tune-btn{
+.tune-btn {
   border: none;
+}
 
+/* sidebar rightbottom*/
+h6 {
+  margin-left: 35px;
 }
+
+
+/* main*/
