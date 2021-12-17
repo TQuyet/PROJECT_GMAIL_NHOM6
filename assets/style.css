@@ -88,8 +88,8 @@
 
 /* sidebar vs righttop */
 #Sidebar {
-  height: 200px;
-  width: 270px;
+  height: 100%;
+  width: 20%;
 }
 .dropdown-btn {
   text-decoration: none;
@@ -132,9 +132,7 @@ a {
 }
 
 /* sidebar rightbottom*/
+
 h6 {
   margin-left: 35px;
-}
-h1 {
-  margin-left: 400px;
 }
