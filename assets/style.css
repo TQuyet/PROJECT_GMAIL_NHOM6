@@ -84,7 +84,10 @@
   margin-top: 13px;
   margin-left: 10px;
   color: rgb(112, 112, 112);
+  border: none;
+  cursor: pointer;
 }
+
 
 /* sidebar vs righttop */
 #Sidebar {

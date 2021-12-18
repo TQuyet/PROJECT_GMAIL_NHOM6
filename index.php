@@ -29,7 +29,7 @@
                             <img src="assets/img/Gmail-logo.png" alt="" /></a>
                         <a class="navbar-brand" href="index.html">Gmail</a>
                     </div>
-                    <div class="h-search">
+                    <div class="h-search me-auto">
                         <form action="">
                             <button class="search-btn">
                                 <span class="material-icons">search</span>
