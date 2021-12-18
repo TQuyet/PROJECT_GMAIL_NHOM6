@@ -241,9 +241,8 @@
                 account_box
                 </span> My name</a>
           </div>
-          
-    
-    
+</div>
+</div>
     <script>
         /*dropdown */
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -261,6 +260,31 @@
             });
         }
     </script>
+    </div>
+    <!--Main-->
+    <div id = "Main">
+        <div class="main-bar">
+        <span class="material-icons">check_box_outline_blank</span>
+        <span class="material-icons">refresh</span>
+        <span class="material-icons">more_vert</span>
+    </div>
+    <hr style="margin:0">
+    <div class="btn-bar" role="group">
+        <button class="btn btn-default">
+        <span class="material-icons">move_to_inbox</span>
+        Chính
+    </button>
+    <button class="btn btn-default">
+        <span class="material-icons">people</span>
+        Mạng Xã Hội
+    </button>
+    <button class="btn btn-default">
+    <span class="material-icons">local_offer</span>
+        Quảng Cáo
+    </button>
+    </div>
+    <hr style="margin:0">
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
