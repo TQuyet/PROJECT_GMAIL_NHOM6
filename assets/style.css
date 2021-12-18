@@ -91,8 +91,6 @@
 
 /* sidebar vs righttop */
 #Sidebar {
-  height: 100%;
-  width: 20%;
   margin: 0px;
 }
 .dropdown-btn {
@@ -142,12 +140,6 @@ h6 {
 }
 
 /* Main */
-#Main {
-  margin-left: 270px;
-  margin-right: 100px;
-  position: relative;
-  bottom: 500px;
-}
 
 .btn {
   width: 250px;

@@ -53,6 +53,9 @@
         <hr>
         <!--Header-->
     </div>
+    <div class="container-fluid">
+	<div class="row">
+    <div class="col-md-2">
     <div id="Sidebar" >
        
         
@@ -261,7 +264,11 @@
         }
     </script>
     </div>
+    </div>
+
+    
     <!--Main-->
+    <div class="col-md-9">
     <div id = "Main">
         <div class="main-bar">
         <span class="material-icons">check_box_outline_blank</span>
@@ -284,6 +291,13 @@
     </button>
     </div>
     <hr style="margin:0">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-1">
+
+		</div>
+    </div>
     </div>
 
 
