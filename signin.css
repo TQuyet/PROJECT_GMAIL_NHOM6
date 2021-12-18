@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 421px;
+  padding: 15px;
+  margin: auto;
+}
+
+
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bnt{
+  margin-left: 71px;
+  border-radius: 8px;
+  border: none;
+  width: 120px;
+  height: 50px;
+}
+.container{
+  padding: 0px;
+  width:391px;
+  margin-top: 40px;
+}
+.spann{
+  
+  margin-right: 71px;
+  padding: 0px;
+}
+.emailsdt{
+  margin-right: 215px;
+}
+.timhieuthem{
+  text-decoration: none;
+
+}
