@@ -8,13 +8,13 @@
     <title>Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="login.css">
 
 </head>
 
 
 <body class="text-center">
-    <main class="form-signin">
+    <main class="form-login">
         <form action="process-login.php" method="post">
                 
             <img class="mb-3" src="assets/img/google.jpg" alt="" width="75" height="24">
@@ -33,11 +33,11 @@
             
             <div class="container row">
                 <div class="tao col-md-6">
-                    <span class="spann" style="color:dodgerblue" >Tạo tài khoản</span>
+                    <a href="signin.php" class="spann" style="color:dodgerblue; text-decoration:none" >Tạo tài khoản</a>
                     
                 </div>
                 <div class="tao col-md-6" >
-                    <button name="btnSignInpass" class="bnt" style="background-color: dodgerblue;" > <span style="color:aliceblue;">Tiếp theo</span></button>
+                    <button name="btnLoginpass" class="bnt" style="background-color: dodgerblue;" > <span style="color:aliceblue;">Tiếp theo</span></button>
                 </div>
             </div>
             

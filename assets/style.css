@@ -88,12 +88,10 @@
   cursor: pointer;
 }
 
-
 /* sidebar vs righttop */
 #Sidebar {
-  height: 100%;
-  width: 20%;
   margin: 0px;
+  height: 100%;
 }
 .dropdown-btn {
   text-decoration: none;
@@ -140,14 +138,21 @@ a {
 h6 {
   margin-left: 35px;
 }
+.right-sidebar {
+  position: fixed;
+  right: 0;
+  top: 70px;
+  width: 7%;
+}
+button {
+  border: none;
+  background-color: white;
+}
+.right-sidebar .material-icons {
+  margin-top: 25px;
+}
 
 /* Main */
-#Main {
-  margin-left: 270px;
-  margin-right: 100px;
-  position: relative;
-  bottom: 500px;
-}
 
 .btn {
   width: 250px;
@@ -160,4 +165,9 @@ h6 {
   margin: 0px;
   position: relative;
   right: 50px;
+}
+
+#Main .btn > a{
+  position: relative;
+  bottom: 5px;
 }
