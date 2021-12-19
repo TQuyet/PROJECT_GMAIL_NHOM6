@@ -3,7 +3,7 @@
     session_start();
 
     
-    if(isset($_POST['btnSignInpass'])){
+    if(isset($_POST['btnLoginpass'])){
         $email = $_POST['txtpass'];
         
        

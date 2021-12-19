@@ -3,7 +3,7 @@
     session_start();
 
     
-    if(isset($_POST['btnSignIn'])){
+    if(isset($_POST['btnLogin'])){
         $email = $_POST['txtMK'];
         
        
