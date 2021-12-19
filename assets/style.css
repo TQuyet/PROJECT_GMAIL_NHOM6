@@ -64,6 +64,14 @@
   margin-right: 10px;
 }
 
+#header .textarea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  outline:none
+}
+
 #header .h-search input {
   width: 500px;
   height: fit-content;

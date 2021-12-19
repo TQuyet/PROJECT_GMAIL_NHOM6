@@ -33,7 +33,7 @@
                             <button class="search-btn">
                                 <span class="material-icons">search</span>
                             </button>
-                            <input type="text" placeholder="Tìm kiếm trong thư" />
+                            <input style="outline: none;" type="text" placeholder="Tìm kiếm trong thư" />
                             <button class="tune-btn">
                                 <span class="material-icons">tune</span>
                             </button>
@@ -286,6 +286,7 @@
         </div>
 
     </div>
+
     <div class="col-md-1">
         <div class="right-sidebar ">
             <ul style="list-style: none;">
