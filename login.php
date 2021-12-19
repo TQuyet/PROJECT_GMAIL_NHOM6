@@ -33,7 +33,7 @@
             
             <div class="container row">
                 <div class="tao col-md-6">
-                    <span class="spann" style="color:dodgerblue" >Tạo tài khoản</span>
+                    <a href="signin.php" class="spann" style="color:dodgerblue; text-decoration:none" >Tạo tài khoản</a>
                     
                 </div>
                 <div class="tao col-md-6" >

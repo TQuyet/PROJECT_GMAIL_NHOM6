@@ -275,17 +275,11 @@
                 <hr style="margin:0">
                 <div class="btn-bar" role="group">
                     <button class="btn btn-default">
-                        <span class="material-icons">move_to_inbox</span>
-                        Chính
-                    </button>
+                        <span class="material-icons">move_to_inbox</span><a>Chính</a></button>
                     <button class="btn btn-default">
-                        <span class="material-icons">people</span>
-                        Mạng Xã Hội
-                    </button>
+                        <span class="material-icons">people</span><a>Mạng Xã Hội</a></button>
                     <button class="btn btn-default">
-                        <span class="material-icons">local_offer</span>
-                        Quảng Cáo
-                    </button>
+                        <span class="material-icons">local_offer</span><a>Quảng Cáo</a></button>
                 </div>
                 <hr style="margin:0">
             </div>
