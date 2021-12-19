@@ -16,9 +16,8 @@ body {
   max-width: 421px;
   padding: 15px;
   margin: auto;
+  border-style: solid;
 }
-
-
 
 .form-login .form-floating:focus-within {
   z-index: 2;
