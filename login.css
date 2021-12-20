@@ -33,6 +33,7 @@ h4 {
   margin: auto;
   border-style: solid;
 }
+}
 
 .form-login .form-floating:focus-within {
   z-index: 2;
