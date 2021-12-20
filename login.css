@@ -8,7 +8,7 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-color:rgb(255, 255, 255);
 }
 
 
@@ -32,7 +32,7 @@ h4 {
   padding: 15px;
   margin: auto;
   border-style: solid;
-}
+
 }
 
 .form-login .form-floating:focus-within {
@@ -70,4 +70,5 @@ h4 {
   text-decoration: none;
 
 }
+
 
