@@ -9,7 +9,7 @@
        
 
         
-        $conn = mysqli_connect('localhost','root','','dhtl_danhba');
+        $conn = mysqli_connect('localhost','root','','taikhoan');
         if(!$conn){
             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
         }
@@ -24,7 +24,7 @@
             header("location: index.html"); 
         }else{
             $error = "Bạn nhập thông tin Email hoặc số điện thoại chưa chính xác";
-            header("location: login.php?error=$error"); 
+            header("location: login.php?error= $error"); 
         }
 
         

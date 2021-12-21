@@ -3,6 +3,7 @@ session_start();
     if(!isset($_SESSION['isLoginOK'])){
         header("location:login.php");
     }
+    
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +21,10 @@ session_start();
 
 
 <body class="text-center">
-    <main class="form-login">
+    <main class="form-login" style="border-style: groove ; ">
         <form action="index.php" method="post">
                 
-            <img class="mb-3" src="assets/img/google.jpg" alt="" width="75" height="24">
+            <img class="mb-3 mt-5" src="assets/img/google.jpg" alt="" width="75" height="24">
 
             <h3>Đăng nhập</h3>
             <p>Tiếp tục với gmail</p>
@@ -41,7 +42,7 @@ session_start();
                     <span class="spann me-3 mt-5" style="color:dodgerblue" >Bạn quên mật khẩu ?</span>
                     
                 </div>
-                <div class="tao col-md-6" >
+                <div class="tao col-md-6 mb-5" >
                     <button name="btnLogin" class="bnt" style="background-color: dodgerblue;" > <span style="color:aliceblue;">Tiếp theo</span></button>
                 </div>
             </div>

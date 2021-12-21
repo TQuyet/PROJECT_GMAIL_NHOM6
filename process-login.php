@@ -9,7 +9,7 @@
        
 
         
-        $conn = mysqli_connect('localhost','root','','dhtl_danhba');
+        $conn = mysqli_connect('localhost','root','','taikhoan');
         if(!$conn){
             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
         }

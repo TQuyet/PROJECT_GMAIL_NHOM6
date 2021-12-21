@@ -26,7 +26,7 @@
                 <label style="color:firebrick" for="Không tìm thấy tài khoản Google của bạn."></label>
                 <label  for="floatingInput">Email hoặc số điện thoại</label>
             </div>
-            <label for="" style="color: firebrick;"> Không tìm thấy Tài khoản Google của bạn.</label>
+            Không tìm thấy Tài khoản Google của bạn.
             <h6 class="emailsdt" style="color:dodgerblue" style="text-align: left;">Bạn quên địa chỉ email?</h6>
             
 
