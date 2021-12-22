@@ -40,7 +40,7 @@
                         </form>
                     </div>
                     <div class="h-right">
-                        <span class="material-icons">help</span>
+                        <span he class="material-icons">help</span>
                         <span class="material-icons">settings</span>
                         <span class="material-icons">apps</span>
                         <span class="material-icons">account_circle</span>
@@ -60,8 +60,16 @@
 
                     <div class="sidebar-left ">
                         <div class="sidebar-lefttop">
-                            <button style="  box-shadow: 5px 5px 8px #888888; background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; "><img style="border-radius: 50%;width: 50px;" src="assets/img/soanthu.png" alt="">
-                                Soạn thư</button>
+                            <button style="  box-shadow: 5px 5px 8px #888888; background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
+                                <img style="border-radius: 50%;width: 50px;" src="assets/img/soanthu.png" alt="">
+                                Soạn thư
+
+                            </button>
+                            <div class="soanthumoi">
+                                <div class="header_thumoi">
+                                    <h6>Thư mới</h6>
+                                </div>
+                            </div>
                             <ul style="list-style-type: none;overflow-y: scroll; overflow-x: hidden" class="menusidebar">
 
                                 <li>
