@@ -33,7 +33,7 @@
             <input type="gmail" name="txtgmail" class="form-control" id="floatingInput" placeholder="gmail">
             <label for="floatingInput">Tên người dùng</label>
         </div>
-        <a style="margin-left:10px">Bạn có thể sử dụng chữ cái, số và dấu chấm</a>
+        <a style="margin-left:10px">Bạn có thể sử dụng chữ cái, số và dấu chấm.</a>
         <div style="padding-top: 20px;" class="pass container row">
             <div style="padding-right: 0px" class="col-md-6">
                 <div class="form-floating">
@@ -47,7 +47,7 @@
                     <label for="floatingInput">Xác nhận</label>
                 </div>
             </div>
-            <a style="margin-left:10px">Sử dụng 8 ký tự trở lên và kết hợp chữ cái, chữ số và biểu tượng</a>
+            <a style="margin-left:10px">Sử dụng 8 ký tự trở lên và kết hợp chữ cái, chữ số và biểu tượng.</a>
         </div>
     </main>
 
