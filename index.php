@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,6 @@
 </head>
 
 <body>
-
     <!--Header-->
     <div class="container-fluid">
 
@@ -23,7 +23,12 @@
             <nav style="width: 100%;" class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <div class="h-left">
-                        <span class="material-icons">menu</span>
+                        <button class="accordion">
+
+                            <span class="material-icons">menu</span>
+
+                        </button>
+
                         <a href="index.html">
                             <img src="assets/img/Gmail-logo.png" alt="" /></a>
                         <a class="navbar-brand" href="index.html">Gmail</a>
@@ -56,31 +61,18 @@
         <div class="row">
             <div class="col-md-3">
                 <div id="Sidebar">
-
-
                     <div class="sidebar-left ">
                         <div class="sidebar-lefttop">
-                            <button style="  box-shadow: 5px 5px 8px #888888; background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
+                            <button style=" box-shadow: 1px 2px #888888;  background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
                                 <img style="border-radius: 50%;width: 50px;" src="assets/img/soanthu.png" alt="">
                                 Soạn thư
-
                             </button>
-                            <div class="soanthumoi">
-                                <div class="header_thumoi">
-                                    <h6>Thư mới</h6>
-                                </div>
-                            </div>
                             <ul style="list-style-type: none;overflow-y: scroll; overflow-x: hidden" class="menusidebar">
-
                                 <li>
                                     <a href="#" style="color: black;  "><span class="material-icons">
                                             move_to_inbox
                                         </span> Hộp thư đến
-
                                     </a>
-
-
-
                                 </li>
                                 <li>
                                     <a href="#" style="color: black; "><span class="material-icons">
@@ -123,7 +115,6 @@
                                                     </span>
                                                     Trò chuyện
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="#" style="color: black;"><span class="material-icons">
@@ -131,30 +122,25 @@
                                                     </span>
                                                     Đã lên lịch
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="#" style="color: black;"><span class="material-icons">
                                                         markunread
                                                     </span>Tất cả thư
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="#" style="color: black;"><span class="material-icons">
                                                         new_releases
                                                     </span>Thư rác
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="#" style="color: black;"><span class="material-icons">
                                                         delete
                                                     </span> Thùng rác
                                                 </a>
-
                                             </li>
-
                                 </a>
                             </ul>
                             <li>
@@ -169,33 +155,27 @@
                                                         people
                                                     </span>Mạng xã hội
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="#" style="color: black;"><span class="material-icons">
                                                         error
                                                     </span>Nội dung cập nhật
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="#" style="color: black;"><span class="material-icons">
                                                         question_answer
                                                     </span>Diễn đàn
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="#" style="color: black;"><span class="material-icons">
                                                         local_offer
                                                     </span>Quảng cáo
                                                 </a>
-
                                             </li>
                                         </ul>
-
                                 </a>
-
                             </li>
                             <li>
                                 <a href="#" style="color: black;">
@@ -204,7 +184,6 @@
                                     </span>
                                     Quản lý nhãn
                                 </a>
-
                             </li>
                             <li>
                                 <a href="#" style="color: black;">
@@ -213,10 +192,8 @@
                                     </span>
                                     Tạo nhãn mới
                                 </a>
-
                             </li>
                         </div>
-
                     </div>
                     <hr>
                     <div class="sidebar-leftbottom">
@@ -230,8 +207,6 @@
                                         </span>
                                         Cuộc họp mới
                                         <a>
-
-
                                 </li>
                                 <li>
                                     <a href="#">
@@ -240,7 +215,6 @@
                                         </span>
                                         Tham gia cuộc họp
                                     </a>
-
                                 </li>
                             </ul>
                             <hr>
@@ -251,27 +225,9 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    /*dropdown */
-                    var dropdown = document.getElementsByClassName("dropdown-btn");
-                    var i;
 
-                    for (i = 0; i < dropdown.length; i++) {
-                        dropdown[i].addEventListener("click", function() {
-                            this.classList.toggle("active");
-                            var dropdownContent = this.nextElementSibling;
-                            if (dropdownContent.style.display === "block") {
-                                dropdownContent.style.display = "none";
-                            } else {
-                                dropdownContent.style.display = "block";
-                            }
-                        });
-                    }
-                </script>
             </div>
         </div>
-
-
         <!--Main-->
         <div class="col-md-8">
             <div id="Main">
@@ -292,9 +248,7 @@
                 <hr style="margin:0">
             </div>
         </div>
-
     </div>
-
     <div class="col-md-1">
         <div class="right-sidebar ">
             <ul style="list-style: none;">
@@ -304,36 +258,27 @@
                             event
                         </span>
                     </button>
-
                 </li>
-
                 <li>
                     <button>
                         <span class="material-icons">
                             batch_prediction
                         </span>
                     </button>
-
-
                 </li>
                 <li>
                     <button>
                         <span class="material-icons">
                             task_alt
                         </span>
-
                     </button>
-
-
                 </li>
                 <li>
                     <button>
                         <span class="material-icons">
                             account_circle
                         </span>
-
                     </button>
-
                 </li>
                 <hr>
                 <li>
@@ -344,28 +289,38 @@
                     </button>
                 </li>
             </ul>
-
-
-
-
-
-
-
         </div>
+    </div>
+    <div class="container mt-3">
+        <h3>Popover Example</h3>
 
+        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Thu moi" data-bs-content="soan thu">
+            Toggle popover
+        </button>
     </div>
 
-
-
-
-    </div>
-
-    </div>
-    </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+    <script>
+        /*dropdown */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
