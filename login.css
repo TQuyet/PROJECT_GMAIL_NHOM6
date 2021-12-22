@@ -12,7 +12,7 @@ body {
 }
 
 
-.form-signin {
+.form-login {
     width: 100%;
     max-width: 421px;
     margin: auto;
@@ -72,3 +72,6 @@ h4 {
 }
 
 
+.input {
+  margin-top: 10px;
+}

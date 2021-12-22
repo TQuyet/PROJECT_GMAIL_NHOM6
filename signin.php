@@ -16,18 +16,38 @@
         <h2>Tạo tài khoản Google</h2>
         <h4>Tiếp tục tới Gmail</h4>
         <div class="container row">
-            <div class="col-md-6">
+            <div style="padding-right: 0px" class="col-md-6">
                 <div class="form-floating">
                     <input type="Ho" name="txtHo" class="form-control" id="floatingInput" placeholder="firstname">
                     <label for="floatingInput">Họ</label>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div style="padding-right: 0px" class="col-md-6">
                 <div class="form-floating">
                     <input type="Ten" name="txtTen" class="form-control" id="floatingInput" placeholder="name">
                     <label for="floatingInput">Tên</label>
                 </div>
             </div>
+        </div>
+        <div style="margin-top: 20px; margin-right: 12px;" class="form-floating">
+            <input type="gmail" name="txtgmail" class="form-control" id="floatingInput" placeholder="gmail">
+            <label for="floatingInput">Tên người dùng</label>
+        </div>
+        <a style="margin-left:10px">Bạn có thể sử dụng chữ cái, số và dấu chấm</a>
+        <div style="padding-top: 20px;" class="pass container row">
+            <div style="padding-right: 0px" class="col-md-6">
+                <div class="form-floating">
+                    <input type="matkhau" name="txtmatkhau" class="form-control" id="floatingInput" placeholder="matkhau">
+                    <label for="floatingInput">Mật khẩu</label>
+                </div>
+            </div>
+            <div style="padding-right: 0px" class="col-md-6">
+                <div class="form-floating">
+                    <input type="xacnhan" name="txtxacnhan" class="form-control" id="floatingInput" placeholder="xacnhan">
+                    <label for="floatingInput">Xác nhận</label>
+                </div>
+            </div>
+            <a style="margin-left:10px">Sử dụng 8 ký tự trở lên và kết hợp chữ cái, chữ số và biểu tượng</a>
         </div>
     </main>
 
