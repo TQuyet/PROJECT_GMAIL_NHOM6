@@ -7,10 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail.com</title>
 </head>
@@ -63,7 +61,7 @@
                 <div id="Sidebar">
                     <div class="sidebar-left ">
                         <div class="sidebar-lefttop">
-                            <button style=" box-shadow: 1px 2px #888888;  background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style=" box-shadow: 1px 2px #888888;  background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
                                 <img style="border-radius: 50%;width: 50px;" src="assets/img/soanthu.png" alt="">
                                 Soạn thư
                             </button>
@@ -291,20 +289,44 @@
             </ul>
         </div>
     </div>
-    <div class="container mt-3">
-        <h3>Popover Example</h3>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Thu moi" data-bs-content="soan thu">
-            Toggle popover
-        </button>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Thư mới</h4>
+                    <button>
+
+                    </button>
+                    <button>
+
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="">
+                        <input style=" border:none;outline: none;" type="text" placeholder="Người nhận"></input>
+                    </form>
+                    <form action="">
+                        <input style=" border:none;outline: none;" type="text" placeholder="Chủ đề"></input>
+                    </form>
+                    <form action="">
+                        <input style="width: 100%; height: 270px; border:none;outline: none;" type="text"></input>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button">Gửi</button>
+                </div>
+
+            </div>
+        </div>
     </div>
-
-    <script>
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-        })
-    </script>
     <script>
         /*dropdown */
         var dropdown = document.getElementsByClassName("dropdown-btn");
