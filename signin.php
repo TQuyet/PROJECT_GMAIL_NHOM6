@@ -16,42 +16,52 @@
         <h2>Tạo tài khoản Google</h2>
         <h4>Tiếp tục tới Gmail</h4>
         <div class="container row">
-            <div style="padding-right: 0px" class="col-md-6">
+            <div style="padding: 0px" class="col-md-6">
                 <div class="form-floating">
-                    <input type="Ho" name="txtHo" class="form-control" id="floatingInput" placeholder="firstname">
+                    <input type="Ho" name="txtHo" class="form-control" id="floatingInput" placeholder="firstname" require>
                     <label for="floatingInput">Họ</label>
                 </div>
             </div>
             <div style="padding-right: 0px" class="col-md-6">
                 <div class="form-floating">
-                    <input type="Ten" name="txtTen" class="form-control" id="floatingInput" placeholder="name">
+                    <input type="Ten" name="txtTen" class="form-control" id="floatingInput" placeholder="name" require>
                     <label for="floatingInput">Tên</label>
                 </div>
             </div>
         </div>
-        <div style="margin-top: 20px; margin-right: 12px;" class="form-floating">
-            <input type="gmail" name="txtgmail" class="form-control" id="floatingInput" placeholder="gmail">
+        <div style="margin-top: 20px" class="form-floating">
+            <input type="email" name="txtgmail" class="form-control" id="floatingInput" placeholder="gmail" require>
             <label for="floatingInput">Tên người dùng</label>
         </div>
         <a style="margin-left:10px">Bạn có thể sử dụng chữ cái, số và dấu chấm.</a>
         <div style="padding-top: 20px;" class="pass container row">
-            <div style="padding-right: 0px" class="col-md-6">
+            <div style="padding: 0px" class="col-md-6">
                 <div class="form-floating">
-                    <input type="matkhau" name="txtmatkhau" class="form-control" id="floatingInput" placeholder="matkhau">
+                    <input type="password" name="txtmatkhau" class="form-control" id="matkhau" placeholder="matkhau" require>
                     <label for="floatingInput">Mật khẩu</label>
                 </div>
             </div>
             <div style="padding-right: 0px" class="col-md-6">
                 <div class="form-floating">
-                    <input type="xacnhan" name="txtxacnhan" class="form-control" id="floatingInput" placeholder="xacnhan">
+                    <input type="password" name="txtxacnhan" class="form-control" id="xacnhan" placeholder="xacnhan" require>
                     <label for="floatingInput">Xác nhận</label>
                 </div>
             </div>
-            <a style="margin-left:10px">Sử dụng 8 ký tự trở lên và kết hợp chữ cái, chữ số và biểu tượng.</a>
+            <a style="margin-left:10px; padding: 0">Sử dụng 8 ký tự trở lên và kết hợp chữ cái, chữ số và biểu tượng.</a>
         </div>
+        <input style="margin-top: 20px" type="checkbox" onclick="myFunction()">Hiện mật khẩu
+        <div style="margin-top:30px" class="container row">
+                <div class="tao col-md-6">
+                    <a href="login.php" class="spann" style="color:dodgerblue; text-decoration:none" >Đăng nhập</a>
+                    
+                </div>
+                <div class="tao col-md-6 mb-5" >
+                    <button name="btnLoginpass" class="bnt" style="background-color: dodgerblue;" > <span style="color:aliceblue;">Đăng kí</span></button>
+                </div>
+            </div>
     </main>
 
-
+    <script src="/signin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
