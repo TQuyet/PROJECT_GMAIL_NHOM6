@@ -4,17 +4,19 @@ body {
 }
 
 body {
+  height: 100%;
   display: flex;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.form-signin {
+.form-signup {
   width: 100%;
   max-width: 421px;
   margin: auto;
   padding: 15px;
+  padding-bottom: 40px;
 }
   
 h2 {
