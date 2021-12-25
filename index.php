@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail.com</title>
 </head>
@@ -290,17 +291,19 @@
         </div>
     </div>
     <!-- The Modal -->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
+    <div class="modal" id="myModal" style="  background-color: none  ">
+        <div class="modal-dialog" style="position:fixed; bottom:0px;right:65px ;width: 400px;">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title">Thư mới</h4>
-                    <button>
+                    <button type="button">
+                        <span class="min">_</span>
 
                     </button>
-                    <button>
+                    <button type="button">
+                        <span class="max">[ ]</span>
 
                     </button>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -327,7 +330,33 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+        jQuery(document).ready(function($) {
+            $(document).on('click', '.min', function() {
+                $(this).closest('.modal').find('.content').slideUp();
+                $(this).closest('.modal').animate({
+                    'left': 0,
+                    'bottom': 0
+                });
+            });
+
+            $(document).on('click', '.max', function() {
+                $(this).closest('.modal').find('.content').slideDown();
+                $(this).closest('.modal').animate({
+                    'left': '20px',
+                    'bottom': '50%'
+                });
+            });
+
+            $(document).on('click', '.close', function() {
+                $(this).closest('.modal').fadeOut();
+            });
+        });
+    </script>
     <script>
+        // $("#myModal").modal({
+        //     backdrop: false
+        // });
         /*dropdown */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
