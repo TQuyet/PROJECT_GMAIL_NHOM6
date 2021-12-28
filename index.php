@@ -47,10 +47,16 @@
                         <span he class="material-icons">help</span>
                         <span class="material-icons">settings</span>
                         <span class="material-icons">apps</span>
-                        <span class="material-icons">account_circle</span>
+                        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-content=" "><span class="material-icons">account_circle</span></a>
                     </div>
                 </div>
             </nav>
+            <script>
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+                    return new bootstrap.Popover(popoverTriggerEl)
+                })
+            </script>
         </div>
 
         <hr>
@@ -314,9 +320,11 @@
                     <form action="">
                         <input style=" border:none;outline: none;" type="text" placeholder="Người nhận"></input>
                     </form>
+                    <hr>
                     <form action="">
                         <input style=" border:none;outline: none;" type="text" placeholder="Chủ đề"></input>
                     </form>
+                    <hr>
                     <form action="">
                         <input style="width: 100%; height: 270px; border:none;outline: none;" type="text"></input>
                     </form>
@@ -354,9 +362,6 @@
         });
     </script>
     <script>
-        // $("#myModal").modal({
-        //     backdrop: false
-        // });
         /*dropdown */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
