@@ -242,14 +242,54 @@
                     <span class="material-icons">more_vert</span>
                 </div>
                 <hr style="margin:0">
-                <div class="btn-bar" role="group">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span class="material-icons">
+                                    move_to_inbox
+                                </span> Chính</th>
+                            <th scope="col">Mạng xã hội</th>
+                            <th scope="col">Quảng cáo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Vùng này là Dữ liệu cần lặp lại hiển thị từ CSDL -->
+                        <?php
+                        // Bước 01: Kết nối Database Server
+                        $conn = mysqli_connect('localhost', 'root', '', 'dhtl_danhba');
+                        if (!$conn) {
+                            die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
+                        }
+                        // Bước 02: Thực hiện truy vấn
+                        $sql = "SELECT * FROM db_nhanvien";
+                        $result = mysqli_query($conn, $sql);
+                        // Bước 03: Xử lý kết quả truy vấn
+                        if (mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                                <tr>
+                                    <td> <span class="material-icons">check_box_outline_blank</span><span class="material-icons">
+                                            star
+                                        </span><?php echo $row['hovaten']; ?></td>
+                                    <td><?php echo $row['hovaten']; ?></td>
+                                    <td><?php echo $row['chucvu']; ?></td>
+
+                                </tr>
+                        <?php
+                            }
+                        }
+                        ?>
+
+                    </tbody>
+                </table>
+                <!-- <div class="btn-bar" role="group">
                     <button class="btn btn-default">
                         <span class="material-icons">move_to_inbox</span><a>Chính</a></button>
                     <button class="btn btn-default">
                         <span class="material-icons">people</span><a>Mạng Xã Hội</a></button>
                     <button class="btn btn-default">
                         <span class="material-icons">local_offer</span><a>Quảng Cáo</a></button>
-                </div>
+                </div> -->
                 <hr style="margin:0">
             </div>
         </div>
