@@ -16,7 +16,7 @@
         <div class="email-app">
             <main>
                 <p class="text-center">Thư mới</p>
-                <form action="send_mail.php" method="post">
+                <form action="process-sendmail.php" method="post">
                     <div class="form-row mb-3">
                         <label for="to" class="col-2 col-sm-1 col-form-label">Đến :</label>
                         <div class="col-10 col-sm-11">
@@ -29,52 +29,50 @@
                             <input type="text" name="Chude" class="form-control" id="cc" placeholder="Nhấp để nhập chủ đề ...">
                         </div>
                     </div>
-                    <a href="send_mail.php" type="submit" name="btngui" class="btn btn-success"> Gửi </a>
-
-
-                </form>
-                <div class="row">
-                    <div class="col-sm-11 ml-auto">
-                        <div class="toolbar" role="toolbar">
-                            <div class="btn-group">
+                    <div class="row">
+                        <div class="col-sm-11 ml-auto">
+                            <div class="toolbar" role="toolbar">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-light">
+                                        <span class="fa fa-bold"></span>
+                                    </button>
+                                    <button type="button" class="btn btn-light">
+                                        <span class="fa fa-italic"></span>
+                                    </button>
+                                    <button type="button" class="btn btn-light">
+                                        <span class="fa fa-underline"></span>
+                                    </button>
+                                </div>
                                 <button type="button" class="btn btn-light">
-                                    <span class="fa fa-bold"></span>
+                                    <span class="fa fa-trash-o"></span>
                                 </button>
                                 <button type="button" class="btn btn-light">
-                                    <span class="fa fa-italic"></span>
+                                    <span class="fa fa-paperclip"></span>
                                 </button>
-                                <button type="button" class="btn btn-light">
-                                    <span class="fa fa-underline"></span>
-                                </button>
-                            </div>
-                            <button type="button" class="btn btn-light">
-                                <span class="fa fa-trash-o"></span>
-                            </button>
-                            <button type="button" class="btn btn-light">
-                                <span class="fa fa-paperclip"></span>
-                            </button>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-                                    <span class="fa fa-tags"></span>
-                                    <span class="caret"></span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">add label <span class="badge badge-danger"> Home</span></a>
-                                    <a class="dropdown-item" href="#">add label <span class="badge badge-info"> Job</span></a>
-                                    <a class="dropdown-item" href="#">add label <span class="badge badge-success"> Clients</span></a>
-                                    <a class="dropdown-item" href="#">add label <span class="badge badge-warning"> News</span></a>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                        <span class="fa fa-tags"></span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">add label <span class="badge badge-danger"> Home</span></a>
+                                        <a class="dropdown-item" href="#">add label <span class="badge badge-info"> Job</span></a>
+                                        <a class="dropdown-item" href="#">add label <span class="badge badge-success"> Clients</span></a>
+                                        <a class="dropdown-item" href="#">add label <span class="badge badge-warning"> News</span></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group mt-4">
-                            <textarea class="form-control" id="message" name="body" rows="12" placeholder="Nhấn để nhập ... "></textarea>
-                        </div>
-                        <div class="form-group">
-                            <!-- <a href="send_mail.php" type="submit" name="btngui" class="btn btn-success"> Gửi </a> -->
-                            <a href="index.php"> Trở lại</a>
+                            <div class="form-group mt-4">
+                                <textarea class="form-control" id="message" name="body" rows="12" placeholder="Nhấn để nhập ... "></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btngui" class="btn btn-success"></input>
+                                <a href="index.php"> Trở lại</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
+
             </main>
         </div>
     </div>
