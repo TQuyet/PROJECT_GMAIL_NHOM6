@@ -13,9 +13,9 @@
 //     $sql = "INSERT INTO users(Chude, email, body) VALUES('$Chude', '$email', '$body')";
 //     mysqli_query($conn, $sql);
 //     // gui email
-include "send_mail.php";
-if (sendEmailForAccountActive($email)) {
-    echo " Gui thu thanh cong";
-} else {
-    echo "Xin loi he thong dang ban! Vui long thu lai sau";
-}
+// include "send_mail.php";
+// if (sendEmailForAccountActive($email)) {
+//     echo " Gui thu thanh cong";
+// } else {
+//     echo "Xin loi he thong dang ban! Vui long thu lai sau";
+// }
