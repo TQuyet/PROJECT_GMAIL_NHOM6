@@ -16,15 +16,15 @@
         <div class="email-app">
             <main>
                 <p class="text-center">Thư mới</p>
-                <form>
+                <form action="process-sendmail.php" method="post">
                     <div class="form-row mb-3">
                         <label for="to" class="col-2 col-sm-1 col-form-label">Đến :</label>
                         <div class="col-10 col-sm-11">
-                            <input type="email" class="form-control" id="to" placeholder="Nhấp nhập địa chỉ ...">
+                            <input type="email" name="email" class="form-control" id="to" placeholder="Nhấp nhập địa chỉ ...">
                         </div>
                     </div>
                     <div class="form-row mb-3">
-                        <label for="cc" class="col-2 col-sm-1 col-form-label">Chủ đề :</label>
+                        <label for="cc" name="Chude" class="col-2 col-sm-1 col-form-label">Chủ đề :</label>
                         <div class="col-10 col-sm-11">
                             <input type="email" class="form-control" id="cc" placeholder="Nhấp để nhập chủ đề ...">
                         </div>
@@ -67,7 +67,7 @@
                             <textarea class="form-control" id="message" name="body" rows="12" placeholder="Nhấn để nhập ... "></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success">GỬI</button>
+                            <a href="process-sendmail.php" type="submit" name="btngui" class="btn btn-success"> Gửi </a>
                             <a href="index.php"> Trở lại</a>
                         </div>
                     </div>

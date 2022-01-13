@@ -68,7 +68,7 @@
                 <div id="Sidebar">
                     <div class="sidebar-left ">
                         <div class="sidebar-lefttop">
-                            <a href="sendmail.php" type="button" style=" box-shadow: 1px 2px #888888;  background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
+                            <a href="sendmailindex.php" type="button" style=" box-shadow: 1px 2px #888888;  background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
                                 <img style="border-radius: 50%;width: 50px;" src="assets/img/soanthu.png" alt="">
                                 Soạn thư
                             </a>
