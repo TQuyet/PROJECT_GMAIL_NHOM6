@@ -68,10 +68,10 @@
                 <div id="Sidebar">
                     <div class="sidebar-left ">
                         <div class="sidebar-lefttop">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style=" box-shadow: 1px 2px #888888;  background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
+                            <a href="sendmail.php" type="button" style=" box-shadow: 1px 2px #888888;  background-color: white; margin-bottom: 15px ;border-radius: 50px; font-size: 20px;margin-left: 10px;padding-right: 15px;padding-left: 0px; ">
                                 <img style="border-radius: 50%;width: 50px;" src="assets/img/soanthu.png" alt="">
                                 Soạn thư
-                            </button>
+                            </a>
                             <ul style="list-style-type: none;overflow-y: scroll; overflow-x: hidden" class="menusidebar">
                                 <li>
                                     <a href="#" style="color: black;  "><span class="material-icons">
@@ -334,48 +334,6 @@
                     </button>
                 </li>
             </ul>
-        </div>
-    </div>
-    <!-- The Modal -->
-    <div class="modal" id="myModal" style="  background-color: none  ">
-        <div class="modal-dialog" style="position:fixed; bottom:0px;right:65px ;width: 400px;">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Thư mới</h4>
-                    <button type="button">
-                        <span class="min">_</span>
-
-                    </button>
-                    <button type="button">
-                        <span class="max">[ ]</span>
-
-                    </button>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form action="">
-                        <input style=" border:none;outline: none;" type="text" placeholder="Người nhận"></input>
-                    </form>
-                    <hr>
-                    <form action="">
-                        <input style=" border:none;outline: none;" type="text" placeholder="Chủ đề"></input>
-                    </form>
-                    <hr>
-                    <form action="">
-                        <input style="width: 100%; height: 270px; border:none;outline: none;" type="text"></input>
-                    </form>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button">Gửi</button>
-                </div>
-
-            </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">

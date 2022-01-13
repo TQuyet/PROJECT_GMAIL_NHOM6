@@ -1,52 +1,83 @@
-<?php
-$username = 'super.quyet69@gmail.com';
-$password = 'lvgpfwevypsemaza';
+<!DOCTYPE html>
+<html lang="en">
 
-// thu vien gui nhan email :phpmailer
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylest.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Soạn thư</title>
+</head>
 
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
+<body>
+    <div class="container bootdey">
+        <div class="email-app">
+            <main>
+                <p class="text-center">Thư mới</p>
+                <form>
+                    <div class="form-row mb-3">
+                        <label for="to" class="col-2 col-sm-1 col-form-label">Đến :</label>
+                        <div class="col-10 col-sm-11">
+                            <input type="email" class="form-control" id="to" placeholder="Nhấp nhập địa chỉ ...">
+                        </div>
+                    </div>
+                    <div class="form-row mb-3">
+                        <label for="cc" class="col-2 col-sm-1 col-form-label">Chủ đề :</label>
+                        <div class="col-10 col-sm-11">
+                            <input type="email" class="form-control" id="cc" placeholder="Nhấp để nhập chủ đề ...">
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-sm-11 ml-auto">
+                        <div class="toolbar" role="toolbar">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light">
+                                    <span class="fa fa-bold"></span>
+                                </button>
+                                <button type="button" class="btn btn-light">
+                                    <span class="fa fa-italic"></span>
+                                </button>
+                                <button type="button" class="btn btn-light">
+                                    <span class="fa fa-underline"></span>
+                                </button>
+                            </div>
+                            <button type="button" class="btn btn-light">
+                                <span class="fa fa-trash-o"></span>
+                            </button>
+                            <button type="button" class="btn btn-light">
+                                <span class="fa fa-paperclip"></span>
+                            </button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                    <span class="fa fa-tags"></span>
+                                    <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">add label <span class="badge badge-danger"> Home</span></a>
+                                    <a class="dropdown-item" href="#">add label <span class="badge badge-info"> Job</span></a>
+                                    <a class="dropdown-item" href="#">add label <span class="badge badge-success"> Clients</span></a>
+                                    <a class="dropdown-item" href="#">add label <span class="badge badge-warning"> News</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-4">
+                            <textarea class="form-control" id="message" name="body" rows="12" placeholder="Nhấn để nhập ... "></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">GỬI</button>
+                            <a href="index.php"> Trở lại</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 
-
-//Create an instance; passing `true` enables exceptions
-$mail = new PHPMailer(true);
-
-try {
-    //Server settings
-    $mail->SMTPDebug = 0;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = $username;                     //SMTP username
-    $mail->Password   = $password;                               //SMTP password
-    $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
-    $mail->Port       = 465;
-    $mail->CharSet    = 'UTF-8';                               //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-    //Recipients
-    $mail->setFrom('super.quyet69@gmail.com', 'Nguyen Trong Quyet');
-    $mail->addAddress('kitudu99@gmail.com', 'Kieu Tuan Dzung');     //Add a recipient
-    // $mail->addAddress('ellen@example.com');               //Name is optional
-    // $mail->addReplyTo('info@example.com', 'Information');
-    // $mail->addCC('cc@example.com');
-    // $mail->addBCC('bcc@example.com');
-
-    //Attachments
-    // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
-
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = '[CSE485] Điểm danh tuần 20-27/12';
-    $mail->Body    = 'Mã sinh viên:1951060972-Họ Tên: Nguyễn Trọng Quyết ';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-}
+</html>
