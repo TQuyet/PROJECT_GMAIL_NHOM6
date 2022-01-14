@@ -30,7 +30,7 @@
 
                         <a href="index.html">
                             <img src="assets/img/Gmail-logo.png" alt="" /></a>
-                        <a class="navbar-brand" href="index.html">Gmail</a>
+                        <a class="navbar-brand" href="index.php">Gmail</a>
                     </div>
                     <div class="h-search me-auto">
                         <form action="">
@@ -47,7 +47,7 @@
                         <span he class="material-icons">help</span>
                         <span class="material-icons">settings</span>
                         <span class="material-icons">apps</span>
-                        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-content=" "><span class="material-icons">account_circle</span></a>
+                        <a href="login.php" data-bs-toggle="popover" data-bs-placement="bottom" data-content=" "><span class="material-icons">account_circle</span></a>
                     </div>
                 </div>
             </nav>
@@ -256,12 +256,12 @@
                         <!-- Vùng này là Dữ liệu cần lặp lại hiển thị từ CSDL -->
                         <?php
                         // Bước 01: Kết nối Database Server
-                        $conn = mysqli_connect('localhost', 'root', '', 'dhtl_danhba');
+                        $conn = mysqli_connect('localhost', 'root', '', 'dulieuemail');
                         if (!$conn) {
                             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
                         }
                         // Bước 02: Thực hiện truy vấn
-                        $sql = "SELECT * FROM db_nhanvien";
+                        $sql = "SELECT * FROM data_email";
                         $result = mysqli_query($conn, $sql);
                         // Bước 03: Xử lý kết quả truy vấn
                         if (mysqli_num_rows($result) > 0) {
@@ -271,8 +271,8 @@
                                     <td> <span class="material-icons">check_box_outline_blank</span><span class="material-icons">
                                             star
                                         </span><?php echo $row['hovaten']; ?></td>
-                                    <td><?php echo $row['hovaten']; ?></td>
-                                    <td><?php echo $row['chucvu']; ?></td>
+                                    <td><?php echo $row['Chude']; ?></td>
+                                    <td><?php echo $row['body']; ?></td>
 
                                 </tr>
                         <?php

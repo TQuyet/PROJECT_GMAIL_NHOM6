@@ -15,7 +15,7 @@
     <div class="container bootdey">
         <div class="email-app">
             <main>
-                <p class="text-center">Thư mới</p>
+                <p style="font-size:30px;" class="text-center">Thư mới</p>
                 <form action="process-sendmail.php" method="post">
                     <div class="form-row mb-3">
                         <label for="to" class="col-2 col-sm-1 col-form-label">Đến :</label>
