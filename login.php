@@ -14,33 +14,33 @@
 
 
 <body class="text-center">
-    <main style="border-style: groove ; "  class="form-login">
+    <main style="border-style: groove ; " class="form-login">
         <form action="process-login.php" method="post">
-                
+
             <img class="mb-3 mt-5" src="assets/img/google.jpg" alt="" width="75" height="24">
 
             <h3>Đăng nhập</h3>
             <p>Tiếp tục với gmail</p>
             <div class="form-floating ">
-                <input  type="email" name="txtpass" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label  for="floatingInput ">Email hoặc số điện thoại</label>
+                <input type="email" name="txtpass" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput ">Email hoặc số điện thoại</label>
             </div>
             <h6 class="emailsdt" style="color:dodgerblue" style="text-align: left;">Bạn quên địa chỉ email?</h6>
-            
 
-            <p class="lbcheck mt-5" style="text-align: left;" >Đây không phải máy tính của bạn? Hãy sử dụng chế độ
-                 Khách đăng nhập một cách riêng tư.<a class="timhieuthem" href=" "><strong style=" color:dodgerblue;">Tìm hiểu thêm</strong> </a></p>
-            
+
+            <p class="lbcheck mt-5" style="text-align: left;">Đây không phải máy tính của bạn? Hãy sử dụng chế độ
+                Khách đăng nhập một cách riêng tư.<a class="timhieuthem" href=" "><strong style=" color:dodgerblue;">Tìm hiểu thêm</strong> </a></p>
+
             <div class="container row">
                 <div class="tao col-md-6">
-                    <a href="signup.php" class="spann" style="color:dodgerblue; text-decoration:none" >Tạo tài khoản</a>
-                    
+                    <a href="signup.php" class="spann" style="color:dodgerblue; text-decoration:none">Tạo tài khoản</a>
+
                 </div>
-                <div class="tao col-md-6 mb-5" >
-                    <button name="btnLoginpass" class="bnt" style="background-color: dodgerblue;" > <span style="color:aliceblue;">Tiếp theo</span></button>
+                <div class="tao col-md-6 mb-5">
+                    <button name="btnLoginpass" class="bnt" style="background-color: dodgerblue;"> <span style="color:aliceblue;">Tiếp theo</span></button>
                 </div>
             </div>
-            
+
         </form>
 
     </main>
