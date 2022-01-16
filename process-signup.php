@@ -29,7 +29,7 @@
         if($result02 == true){
             header("location:login.php");
         }else{
-            $error = "Can not insert record, Please check ....";
+            $error = "Không thể đăng kí được tài khoản.";
             header("location: signup.php?error=$error");
         }
     }
