@@ -2,7 +2,7 @@
     if(isset($_POST['btnSignup'])){
         header("location:signup.php");
     }
-
+    
     $user1 = $_POST['txtHo'];
     $user2 = $_POST['txtTen'];
     $email = $_POST['txtgmail'];
@@ -20,10 +20,15 @@
     if(mysqli_num_rows($result01) > 0){
         $error = "Email đã tồn tại";
         header("location: signup.php?error=$error");
-    }else{
+        }
+        //if($pass1 != $pass2){
+         //   $error = "Đăng ký không thành công!";
+         //   header("location: signup.php?error=$error");;
+        //}
+        else{
         $pass_md5 = md5($pass1);
         $pass_hash = password_hash($pass1, PASSWORD_DEFAULT);
-        $sql02 = "INSERT INTO db_nguoidung (tendangnhap, email, matkhau) VALUES('$user', '$email', '$pass_hash')";
+        $sql02 = "INSERT INTO db_nguoidung (tendangnhap, email, matkhau) VALUES('$user1  $user2', '$email', '$pass_hash')";
         $result02 = mysqli_query($conn,$sql02);
 
         if($result02 == true){
